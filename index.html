@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset = "UTF-8">
+ <title>Homepage</title>
+  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta https-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  </head>
+
+ <body>
+
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(https://img.freepik.com/premium-photo/tasty-pepperoni-pizza-black-concrete-background_79782-102.jpg?w=996);
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration:none
+}
+/* Header */
+header{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+}
+h2{
+    color: #fff;
+    margin-bottom: 70px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+h4{
+    color: #fff;
+    margin-bottom: 70px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color:#fff;
+    text-align: left;
+}
+
+.header{
+    height: 100vh;
+    background-color:none;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins;
+}
+.search-field{
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+}
+.business{
+    width: 400px;
+}
+.location{
+    width: 200px;
+}
+.search-btn{
+    height: 50px;
+    width: 150px;
+    background:rgba(40, 40, 40, 0.833);
+    border:none;
+    border-radius: 25px;
+    color: white;
+}
+.search-btn:hover{
+    background: linear-gradient(to right, #eceae993, #8c8a8a89, #494849a9, #252425a6);
+    cursor: pointer;
+}
+.form-box{
+    padding: 30px;
+}
+
+.logo{
+    cursor: pointer;
+    color: #fff;
+}
+.nav-area{
+    list-style: none;
+}
+.nav-area li{
+    display: inline-block;
+    padding: 0 15px;
+    text-transform:uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nav-area li a{
+    transition: .3s;
+    color: #fff;
+}
+.nav-area li a:hover{
+    color: #b0afb0d6;
+}
+
+/*product list*/
+
+.product-list{
+    padding: 3em;
+}
+
+.product-list .card{
+    background-color: rgba(255, 255, 255, 0.039);
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px;
+    text-align: left;
+}
+.card .title{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.card img{
+    max-width: 60%;
+    border-radius: 5px;
+    padding-left: 4em;
+}
+.card .text{
+    text-align: left;
+    margin-left: 1em;
+    font-size: 12px;
+    margin-bottom: 0.5em;
+}
+.buy-button{
+    background-color: rgba(33, 33, 33, 0.833);
+    border: none;
+    padding: 0.5cm;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.buy-button.hover{
+    box-shadow: 0px 5px 5px;
+    color: linear-gradient(to right, #eceae993, #8c8a8a89, #494849a9, #252425a6);
+}
+
+.buy-button img.hover{
+    box-shadow: 0px 5px 5px;
+    color: linear-gradient(to right, #eceae993, #8c8a8a89, #494849a9, #252425a6);
+}
+
+.product-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+/*FOOTER PART*/
+.container{
+    max-width: 1170px;
+    margin:auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #24262b2f;
+    padding: 70px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.footer-col h3{
+    font-size: 18px;
+    color: #ffffff;
+    position: left;
+}
+.footer-col{
+   width: 33.33%;
+   padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #494849a9;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+
+  .middle{
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.confetti-button {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em 2em;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #242323;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px rgba(61, 60, 61, 0.5);
+  }
+  .confetti-button:focus { outline: 0; }
+  
+  .confetti-button:before, .confetti-button:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+  }
+  .confetti-button:before {
+    display: none;
+    top: -75%;
+    background-image: radial-gradient(circle, #2d2d2d 20%, transparent 20%),
+     radial-gradient(circle, transparent 20%, #121212 20%, transparent 30%),
+     radial-gradient(circle, #f9f3f6 20%, transparent 20%), 
+     radial-gradient(circle, #f3edf0 20%, transparent 20%), 
+     radial-gradient(circle, transparent 10%, #2d2c2d 15%, transparent 20%), 
+     radial-gradient(circle, #3a393a 20%, transparent 20%), 
+     radial-gradient(circle, #757073 20%, transparent 20%),
+     radial-gradient(circle, #0d0d0d 20%, transparent 20%),
+     radial-gradient(circle, #423f41 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+     10% 10%, 18% 18%;
+  }
+   .confetti-button:after {
+    display: none;
+    bottom: -75%;
+    background-image: radial-gradient(circle, #efe7eb 20%, transparent 20%),
+     radial-gradient(circle, #0b0b0b 20%, transparent 20%), 
+     radial-gradient(circle, transparent 10%, #9c9799 15%, transparent 20%), 
+     radial-gradient(circle, #312f30 20%, transparent 20%),
+     radial-gradient(circle, #8d898b 20%, transparent 20%),
+     radial-gradient(circle, #3a3638 20%, transparent 20%),
+     radial-gradient(circle, #a7a2a4 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+  }
+  
+  .confetti-button:active {
+    transform: scale(0.9);
+    background-color: #2b292a;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+  }
+  
+  .confetti-button.animate:before {
+    display: block;
+    animation: topBubbles ease-in-out 0.75s forwards;
+  }
+  
+  .confetti-button.animate:after {
+    display: block;
+    animation: bottomBubbles ease-in-out 0.75s forwards;
+  }
+   @keyframes
+  topBubbles {  0% {
+   background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 
+   55% 90%, 70% 90%;
+  }
+   50% {
+   background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 
+   65% 20%, 90% 30%;
+  }
+   100% {
+   background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%,
+    65% 10%, 90% 20%;
+   background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+  }
+  @keyframes
+  bottomBubbles {  0% {
+   background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+   50% {
+   background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+   100% {
+   background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+   background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+  }
+    </style>
+
+<script>
+var animateButton = function(e) {
+
+e.preventDefault;
+//reset animation
+e.target.classList.remove('animate');
+
+e.target.classList.add('animate');
+setTimeout(function(){
+  e.target.classList.remove('animate');
+},700);
+};
+
+var classname = document.getElementsByClassName("confetti-button");
+
+for (var i = 0; i < classname.length; i++) {
+classname[i].addEventListener('click', animateButton, false);
+}
+</script>
+
+<!-- Header -->
+<header>
+  <div class="logo">
+    <img src="https://images.vexels.com/media/users/3/128437/isolated/preview/2dd809b7c15968cb7cc577b2cb49c84f-pizza-food-restaurant-logo-by-vexels.png" alt="logo" width="150" height="150">
+    </div>
+
+ <nav>
+ <ul class="nav-area">
+ <li><a href="#">Home</a></li>
+  <li><a href="#pizzazz_menu">Menu</a></li>
+  <li><a href="#product_card">Specials</a></li>
+  <li><a href="#"><img src="https://th.bing.com/th/id/R.1e4b418b3cfbcdafbb46d90a3fb86af1?rik=6kzgrZ8HlQZBlQ&pid=ImgRaw&r=0&sres=1&sresct=1" width="30px" height="30px"></a></li>
+ </ul>
+ </nav>
+ </header>
+
+<!-- Search bar         -->
+<div class="header">
+<form>
+<h2>What Are You Craving?</h2>
+
+ <div class="form-box">
+<input type="text" class="search-field business" placeholder="Enter your address...">
+<input type="text" class="search-field location" placeholder="Deliver when?">
+<button class="search-btn" type="button">Place Order</button>
+ </div>
+ <br>
+<br>
+<h4>Eat It Fresh.</h4>
+</form>
+</div>
+
+<!--Products -->  
+<a id="product_card"></a>
+ <section class="product-list">
+ <h2>Special Combos</h2>
+<div class="product-container">
+
+ <!-- First product -->
+ <div class="card">
+  <div class="image"><img src="https://img.pngio.com/pizza-icon-png-344577-free-icons-library-pizza-icon-png-512_512.jpg" alt="pizza_icon" style="width:100%"></div>
+  <div class = "title"><h1>Meat is Murder Combo</h1></div>
+  <div class= "text"><h3>$19.99</h3></div>
+  <p>Medium BBQ Chicken Pizza Or Suya Shawarma + 60 CL Coke</p>
+  <div><button class="buy-button">Add to Cart</button></div>
+</div>
+
+<div class="card">
+<div class="image"><img src="https://img.pngio.com/pizza-icon-png-344577-free-icons-library-pizza-icon-png-512_512.jpg" alt="pizza_icon" style="width:100%"></div>
+<div class="title"><h1>Pepperroni? It isn't vegetarian?</h1></div>
+<div class="text"><h3>$9.99</h3></div>
+<p>Any BBQ Beef Pie or Pepperroni</p>
+<div><button class="buy-button">Add to Cart</button></div>
+</div>
+
+<div class="card">
+  <div class="image"><img src="https://img.pngio.com/pizza-icon-png-344577-free-icons-library-pizza-icon-png-512_512.jpg" alt="pizza_icon" style="width:100%"></div>
+  <div class = "title"><h1>Here Comes Summer... on Pizza</h1></div>
+  <div class= "text"><h3>$10.99</h3></div>
+  <p>Any Classic + Free Drink</p>
+  <div><button class="buy-button">Add to Cart</button></div>
+</div>
+
+<div class="card">
+  <div class="image"><img src="https://img.pngio.com/pizza-icon-png-344577-free-icons-library-pizza-icon-png-512_512.jpg" alt="pizza_icon" style="width:100%"></div>
+  <div class = "title"><h1>Chicken Overload Combo</h1></div>
+  <div class= "text"><h3>$18.99</h3></div>
+  <p>Any Side + Large Chicken Pie Pizza</p>
+  <div><button class="buy-button">Add to Cart</button></div>
+</div>
+
+<div class="card">
+  <div class="image"><img src="https://img.pngio.com/pizza-icon-png-344577-free-icons-library-pizza-icon-png-512_512.jpg" alt="pizza_icon" style="width:100%"></div>
+  <div class = "title"><h1>Fireworks in your Mouth</h1></div>
+  <div class= "text"><h3>$5.99</h3></div>
+  <p>Shawarma + Cheese Breadstix</p>
+  <div><button class="buy-button">Add to Cart</button></div>
+</div>
+
+<div class="card">
+  <div class="image"><img src="https://img.pngio.com/pizza-icon-png-344577-free-icons-library-pizza-icon-png-512_512.jpg" alt="pizza_icon" style="width:100%"></div>
+  <div class = "title"><h1>Cheesy Sweet & Spicy Wing</h1></div>
+  <div class= "text"><h3>$9.99</h3></div>
+  <p>Cheesy Chicken Alfredo Pasta + Free Drink</p>
+  <div><button class="buy-button">Add to Cart</button></div>
+</div> 
+ </section> </a>
+
+ <!--Menu Section-->
+ <a id="pizzazz_menu">
+ <div class="middle">
+  <button class="confetti-button">Tap to See Full Menu</button> 
+</div> </a>
+
+<script src="style.js"></script>
+
+<br><br>
+<br><br>
+
+ <h2>Find Us</h2>
+<!-- Map -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9883881718642!2d3.71593991379822!3d6.8919916206841725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bd81639e54ec3%3A0x9129b4a8c8367e52!2sBabcock%20University%20Ilishan%20Remo!5e0!3m2!1sen!2suk!4v1639960809422!5m2!1sen!2suk" width="1150" height="400" style="border:0; padding-left: 2em;" allowfullscreen="" loading="lazy"></iframe>
+
+<!-- Footer       -->
+<footer class="footer">
+<div class="container">
+ <div class="row">
+<div class="footer-col">
+<h4>company</h4>
+<ul>
+<li><a href="#">about us</a></li>
+<li><a href="#">our services</a></li>
+<li><a href="#">privacy policy</a></li>
+  </ul>
+ </div>
+
+<div class="footer-col">
+<h4>get help</h4>
+<ul>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">shipping</a></li>
+<li><a href="#">returns</a></li>
+<li><a href="#">order status</a></li>
+<li><a href="#">payment options</a></li>
+</ul>
+</div>
+
+ <div class="footer-col">
+<h4>follow us</h4>
+<div class="social-links">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+ </div>
+</div>
+</div>
+<br>
+ <br>
+ <h3>Pizzazz Pizza © 2022 by Naomi :)</h3>
+ </div>
+</footer>
+</body>
+</html>
